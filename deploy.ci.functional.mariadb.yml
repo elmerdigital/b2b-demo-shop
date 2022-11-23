@@ -6,7 +6,8 @@ tag: '1.0'
 environment: docker.ci
 pipeline: docker.ci.functional
 image:
-    tag: spryker/php:7.4-alpine3.12
+    #tag: spryker/php:7.4
+    tag: spryker/php:8.0-debian-buster@sha256:d994415e4092af217a2c34f1ecd37e63343d2f6ffd8a618cb96101cfa724a750
     node:
         version: 16
         distro: alpine
