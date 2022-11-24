@@ -104,7 +104,7 @@ jobs:
 
 
     php-80-debian-buster:
-        name: "PHP 8.0 / Debian"
+        name: "PHP 8.0 / Debian / Buster"
         runs-on: ubuntu-18.04
         env:
             PROGRESS_TYPE: plain
