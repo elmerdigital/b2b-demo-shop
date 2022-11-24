@@ -33,8 +33,8 @@ jobs:
 
             - name: Run docker
               run: |
-                  git clone https://github.com/spryker/docker-sdk.git ./docker
-                  #git clone https://github.com/elmerdigital/docker-sdk.git -b node16npm8 --single-branch docker
+                  #git clone https://github.com/spryker/docker-sdk.git ./docker
+                  git clone https://github.com/elmerdigital/docker-sdk.git -b node16npm8 --single-branch docker
 
                   docker/sdk boot -v deploy.ci.acceptance.mariadb.yml
                   docker/sdk up -t
@@ -63,8 +63,8 @@ jobs:
 
             - name: Run docker
               run: |
-                  git clone https://github.com/spryker/docker-sdk.git ./docker
-                  #git clone https://github.com/elmerdigital/docker-sdk.git -b node16npm8 --single-branch docker
+                  #git clone https://github.com/spryker/docker-sdk.git ./docker
+                  git clone https://github.com/elmerdigital/docker-sdk.git -b node16npm8 --single-branch docker
 
                   docker/sdk boot -v deploy.ci.acceptance.mariadb.yml
                   docker/sdk up -t
@@ -94,8 +94,8 @@ jobs:
 
             - name: Run docker
               run: |
-                  git clone https://github.com/spryker/docker-sdk.git ./docker
-                  #git clone https://github.com/elmerdigital/docker-sdk.git -b node16npm8 --single-branch docker
+                  #git clone https://github.com/spryker/docker-sdk.git ./docker
+                  git clone https://github.com/elmerdigital/docker-sdk.git -b node16npm8 --single-branch docker
 
                   docker/sdk boot -v deploy.ci.acceptance.mariadb.debian.yml
                   docker/sdk up -t
@@ -125,8 +125,8 @@ jobs:
 
             - name: Run docker
               run: |
-                  git clone https://github.com/spryker/docker-sdk.git ./docker
-                  #git clone https://github.com/elmerdigital/docker-sdk.git -b node16npm8 --single-branch docker
+                  #git clone https://github.com/spryker/docker-sdk.git ./docker
+                  git clone https://github.com/elmerdigital/docker-sdk.git -b node16npm8 --single-branch docker
 
                   docker/sdk boot -v deploy.ci.acceptance.mariadb.debian.yml
                   docker/sdk up -t
