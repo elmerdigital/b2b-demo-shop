@@ -33,7 +33,8 @@ jobs:
 
             - name: Run docker
               run: |
-                  git clone https://github.com/spryker/docker-sdk.git ./docker
+                  #git clone https://github.com/spryker/docker-sdk.git ./docker
+                  git clone https://github.com/elmerdigital/docker-sdk.git --branch bugfix/mysql-return-no-cli-found ./docker
                   docker/sdk boot -v deploy.ci.acceptance.mariadb.yml
                   docker/sdk up -t
                   docker/sdk testing console queue:worker:start --stop-when-empty
@@ -61,7 +62,8 @@ jobs:
 
             - name: Run docker
               run: |
-                  git clone https://github.com/spryker/docker-sdk.git ./docker
+                  #git clone https://github.com/spryker/docker-sdk.git ./docker
+                  git clone https://github.com/elmerdigital/docker-sdk.git --branch bugfix/mysql-return-no-cli-found ./docker
                   docker/sdk boot -v deploy.ci.acceptance.mariadb.yml
                   docker/sdk up -t
                   docker/sdk testing console queue:worker:start --stop-when-empty
@@ -90,7 +92,8 @@ jobs:
 
             - name: Run docker
               run: |
-                  git clone https://github.com/spryker/docker-sdk.git ./docker
+                  #git clone https://github.com/spryker/docker-sdk.git ./docker
+                  git clone https://github.com/elmerdigital/docker-sdk.git --branch bugfix/mysql-return-no-cli-found ./docker
                   docker/sdk boot -v deploy.ci.acceptance.mariadb.debian.yml
                   docker/sdk up -t
                   docker/sdk testing console queue:worker:start --stop-when-empty
